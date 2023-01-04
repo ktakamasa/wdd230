@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    gap: 3rem;
+    padding: 1rem;
+}
+nav *:nth-child(3) {
+    margin-right: 2rem;
+}
+
+nav a{
+    color: white;
+}
+svg {
+    fill: white;
+}
+
+main {
+    color: black;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: lightblue;
+}
+#profile {
+    width: 125px;
+}
+
+footer {
+    background-color: lightblue;
+}
+
+ul {
+    list-style: none;
+}
