@@ -66,6 +66,7 @@ section {
 
 #activities {
     grid-column: 1 / 2;
+    grid-row: 2/4;
     line-height: 2rem;
 }
 
@@ -75,6 +76,10 @@ section {
 
 #information {
     grid-column: 2 / 3;
+}
+#information div,
+#project a {
+    padding: 10px 0 0 20px;
 }
 
 h3 {
@@ -103,4 +108,5 @@ footer p {
 
 ul {
     list-style: none;
+    padding-left: 20px;
 }
