@@ -74,11 +74,15 @@ section {
     grid-column: 2 / 3;
 }
 
+#project a {
+    padding: 10px 0 0 20px;
+}
+
 #information {
     grid-column: 2 / 3;
 }
-#information div,
-#project a {
+
+#information div{
     padding: 10px 0 0 20px;
 }
 
