@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: "Open Sans", Arial, Helvetica;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+    gap: 3rem;
+    padding: 1rem;
+    margin: 0;
+}
+nav *:nth-child(1) {
+    padding-right: 1rem;
+}
+
+nav a{
+    color: white;
+}
+svg {
+    fill: white;
+}
+
+header {
+    background-color: rgba(38, 78, 109, 1);
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+h1 {
+    text-align: center;
+    margin: auto 0;
+}
+#profile {
+    max-width: 125px;
+    grid-column: 1 / 2;
+    padding: 10px;
+    margin-left: 1rem;
+}
+
+main {
+    color: black;
+    max-width: 760px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    grid-column: 1/-1;
+    border-bottom: 1px solid black;
+}
+
+section {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+h3 {
+    background-color: rgba(38, 78, 109, 1);
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+footer {
+    background-color: rgba(38, 78, 109, 1);
+    color: white;
+    padding-left: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin:0;
+}
+
+ul {
+    list-style: none;
+}
