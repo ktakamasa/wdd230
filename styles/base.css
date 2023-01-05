@@ -22,7 +22,7 @@ nav a{
     color: white;
 }
 svg {
-    fill: white;
+    filter: brightness(0) invert(1);
 }
 
 header {
