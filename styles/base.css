@@ -40,7 +40,7 @@ h1 {
     max-width: 125px;
     grid-column: 1 / 2;
     padding: 10px;
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 
 main {
@@ -61,6 +61,20 @@ h2 {
 section {
     border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px rgba(89, 100, 108, 0.5);
+}
+
+#activities {
+    grid-column: 1 / 2;
+    line-height: 2rem;
+}
+
+#project {
+    grid-column: 2 / 3;
+}
+
+#information {
+    grid-column: 2 / 3;
 }
 
 h3 {
@@ -79,7 +93,11 @@ footer {
 }
 
 footer p {
-    margin:0;
+    margin: 5px;
+}
+
+.highlight {
+    font-size: 12px;
 }
 
 ul {
