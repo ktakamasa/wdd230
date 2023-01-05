@@ -4,7 +4,7 @@ body {
     font-family: "Open Sans", Arial, Helvetica;
 }
 
-nav ul{
+nav {
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
