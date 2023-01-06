@@ -8,7 +8,8 @@
     <meta name="description" content="WDD 230 - Chamber of Commerce Site Plan by Koh Takamasa">
     <meta name="author" content="Koh Takamasa">
     <link rel="icon" href="images/clover.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
@@ -17,8 +18,8 @@
    <main>
     <hr>
     <h2>Overview</h2>
-    <h3>Site Name</h3>
-    <h4>Shamrock Chamber of Commerce</h4>
+
+    <h3>Site Name: Shamrock Chamber of Commerce</h3>
     <p>The chamber operates in Dublin, Ohio. The shamrock is one of the major symbols of the city.</p>
 
     <h3>Purpose</h3>
@@ -35,18 +36,25 @@
     <hr>
     <h2>Style Guide</h2>
     <h3>Color Schema</h3>
-    <p>https://coolors.co/224b0c-b59d45-313131-ffffff-000000</p>
+
+    <table class="colors">
+        <tbody>
+            <tr><th>Color</th><th>Use</th></tr>
+            <tr><td id="color1">[#224b0c]</td><td class="color-use">Header background</td></tr>
+            <tr><td id="color2">[#b59d45]</td><td class="color-use">Nav:hover and Headings background </td></tr>
+            <tr><td id="color3">[#313131]</td><td class="color-use">Nav and Footer background</td></tr>
+        </tbody>
+    </table>
     <h3>Typography</h3>
-    <p>Headers: Bebas Neue</p>
-    <p>paragraphs: Roboto</p>
-    <p>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');</p>
+    <p id="header-font">Headers: Bebas Neue</p>
+    <p id="body-font">paragraphs: Open Sans</p>
 
     <hr>
     <h2>Wireframe</h2>
    </main>
    <footer> 
-    <p>&copy; <span id="year"></span> - Koh Takamasa - Portugal</p>
-    <p class="highlight">Last modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="year"></span> - Koh Takamasa</p>
    </footer>
+   <script src="../../scripts/getDates.js"></script>
 </body>
 </html>

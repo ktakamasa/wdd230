@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+:root {
+
+  --color-1: #224b0c;
+  --color-2: #b59d45;
+  --color-3: #313131;
+  
+  --heading-font: "Bebas Neue", Arial, Helvetica;
+  --paragraph-font: "Open Sans", Arial, Helvetica;
+
+  --headline-color-on-white: #000;
+  --headline-color-on-color: #fff; 
+  --paragraph-color-on-white: #000; 
+  --paragraph-color-on-color: #fff; 
+  --paragraph-background-color: #224b0c;
+}
+
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 16px;
+  text-align: center;
+}
+
+#header-font{
+  font-family: var(--heading-font);
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+#body-font {
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  text-align: center;
+  letter-spacing: 1px;
+  
+}
+
+h2, h3, h4, h5, h6{
+    margin-bottom: 5px;
+    background-color: var(--color-2);
+}
+
+hr {
+  height: 3px;
+  margin: 20px 0;
+  background-color: black;
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  margin-top: 0;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 20px 1em;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 50%;
+  height: 2em;
+}
+
+#color1 {
+  background-color: var(--color-1);
+}
+#color2 {
+  background-color: var(--color-2);
+}
+#color3 {
+  background-color: var(--color-3);
+}
+
+.color-use {
+    background-color: rgba(153, 153, 153, 0.577);
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+    font-family: var(--paragraph-font);
+    margin-top: auto;
+}
+
+footer{
+    background-color: var(--color-3);
+    color: #fff;
+}
