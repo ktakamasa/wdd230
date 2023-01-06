@@ -104,3 +104,14 @@ footer{
     background-color: var(--color-3);
     color: #fff;
 }
+a {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
+    display: block;
+}
