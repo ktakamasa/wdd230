@@ -6,7 +6,8 @@ body {
 
 nav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: right;
     align-items: center;
     background-color: black;
@@ -15,7 +16,7 @@ nav {
     margin: 0;
 }
 nav *:nth-child(1) {
-    padding-right: 1rem;
+    padding-right: 0;
 }
 
 nav a{
@@ -47,9 +48,7 @@ main {
     color: black;
     max-width: 760px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    display: block;
     margin-bottom: 2rem;
 }
 
@@ -62,6 +61,7 @@ section {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 2px 2px 3px 3px rgba(89, 100, 108, 0.5);
+    margin: 2rem;
 }
 
 #activities {
@@ -72,10 +72,7 @@ section {
 
 #project {
     grid-column: 2 / 3;
-}
-
-#project a {
-    padding: 10px 0 0 20px;
+    text-align: center;
 }
 
 #information {
