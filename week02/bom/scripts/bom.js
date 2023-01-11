@@ -17,5 +17,7 @@ button.addEventListener("click", () => {
 
     input.focus();
     input.value = "";
+  } else {
+    window.alert("Please enter your favorite scripture!")
   }
 });
