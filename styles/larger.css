@@ -1,5 +1,5 @@
 @media screen and (min-width: 600px) {
-    nav {
+    nav ul{
         display: flex;
         flex-direction: row-reverse;
     }
@@ -15,5 +15,9 @@
 
     section {
         margin: 0;
+    }
+
+    h2 {
+        text-align: left;
     }
 }
