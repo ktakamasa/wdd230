@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+*{
+    margin:0;
+    padding: 0;
+}
+
 body {
     font-family: "Open Sans", Arial, Helvetica;
 }
@@ -48,18 +53,47 @@ h1 {
 
 main {
     color: black;
-    max-width: 760px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 2rem;
+    max-width: 100%;
+    padding: 2rem;
 }
 
-h2 {
+main h2 {
     grid-column: 1/-1;
     border-bottom: 1px solid black;
     padding: 1rem;
     text-align: center;
 }
+
+nav button { font-size: 80%;}
+
+main.dark,
+main.dark a {
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+main.dark h2 {color: white;}
+
+#mode {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+
+}
+
+#mode.dark {
+    background-color: white;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+main a {
+color: black;
+}
+
 
 section {
     border: 2px solid black;
@@ -98,20 +132,14 @@ h3 {
 footer {
     background-color: rgba(38, 78, 109, 1);
     color: white;
-    padding-left: 1rem;
     text-align: center;
 }
 
 footer p {
-    margin: 5px;
+    padding: 5px;
 }
 
 .highlight {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: yellow;
-}
-
-ul {
-    list-style: none;
-    padding-left: 20px;
 }

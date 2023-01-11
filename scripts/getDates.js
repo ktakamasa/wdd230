@@ -14,3 +14,12 @@ menubutton.addEventListener("click", () => {
 	menuitems.forEach((item) => item.classList.toggle("open"));
 	menubutton.classList.toggle("close");
 });
+
+
+// dark mode 
+const modeButton = document.querySelector("#mode");
+const mainArea = document.querySelector("main");
+modeButton.addEventListener("click", () => {
+	modeButton.classList.toggle("dark");
+	mainArea.classList.toggle("dark");
+})
