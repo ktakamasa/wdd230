@@ -22,6 +22,7 @@ nav *:nth-child(1) {
 nav a{
     color: white;
 }
+
 svg {
     filter: brightness(0) invert(1);
     transform: scale(0.7);
