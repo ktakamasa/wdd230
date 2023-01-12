@@ -101,7 +101,9 @@ main {
     color: black;
     max-width: 100%;
     padding: 2rem;
-    height: 100%
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 main h2 {
@@ -116,7 +118,10 @@ main.dark a {
     background-color: rgb(35, 35, 35);
     color: white;
 }
-main.dark h2 {color: white;}
+main.dark h2 {
+    color: white;
+}
+
 
 main.dark section {
     border: 2px solid rgb(150, 150, 150);
