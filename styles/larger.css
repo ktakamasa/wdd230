@@ -1,11 +1,11 @@
 @media screen and (min-width: 600px) {
-    nav ul{
+    /* nav ul{
         display: flex;
         flex-direction: row-reverse;
     }
     nav *:nth-child(1) {
         padding-right: 1rem;
-    }
+    } */
 
     main {
         display: grid;

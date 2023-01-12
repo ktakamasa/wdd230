@@ -9,7 +9,56 @@ body {
     font-family: "Open Sans", Arial, Helvetica;
 }
 
-nav ul{
+nav .menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: #f7f7f7;
+	overflow: hidden;
+}
+nav .menu li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 6rem;
+	padding: 1rem;
+	color: black;
+	position: relative;
+	transition: background 0.5s ease-in-out;
+}
+
+nav #menu-button::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+nav .menu li a:hover,
+nav .menu li:first-child a {
+	background: rgba(38, 78, 109, 1);
+	color: #fff;
+}
+
+/* .active {
+font-weight: 700;
+	background-color: lightgreen;
+} */
+
+nav li a.menu-item {
+	display: none;
+}
+
+nav li a.open {
+	display: flex;
+}
+
+nav #menu-button.close::before {
+	content: "X";
+}
+
+/* nav ul{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -26,12 +75,9 @@ nav *:nth-child(1) {
 
 nav a{
     color: white;
-}
+    text-decoration: none;
+} */
 
-svg {
-    filter: brightness(0) invert(1);
-    transform: scale(0.7);
-}
 
 header {
     background-color: rgba(38, 78, 109, 1);
@@ -55,6 +101,7 @@ main {
     color: black;
     max-width: 100%;
     padding: 2rem;
+    height: 100%
 }
 
 main h2 {
@@ -64,8 +111,6 @@ main h2 {
     text-align: center;
 }
 
-nav button { font-size: 80%;}
-
 main.dark,
 main.dark a {
     background-color: rgb(35, 35, 35);
@@ -73,17 +118,10 @@ main.dark a {
 }
 main.dark h2 {color: white;}
 
-#mode {
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-
+main.dark section {
+    border: 2px solid rgb(150, 150, 150);
 }
 
-#mode.dark {
-    background-color: white;
-    color: black;
-}
 
 ul {
     list-style: none;
@@ -110,7 +148,9 @@ section {
 
 #project {
     grid-column: 2 / 3;
-    text-align: center;
+}
+#project ul {
+    padding: 1rem;
 }
 
 #information {
@@ -133,6 +173,7 @@ footer {
     background-color: rgba(38, 78, 109, 1);
     color: white;
     text-align: center;
+
 }
 
 footer p {
