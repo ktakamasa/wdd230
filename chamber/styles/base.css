@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+header p {
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+header {
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 50px auto auto 50px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+#menu-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+nav ul.open {
+  display: block;
+  background-color: #224b0c;
+  margin: 0;
+  width: 150px;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+}
+
+nav ul li:hover a {
+  background-color: #b59d45;
+  color: black;
+}
+  
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 0.25rem;
+}
+.social svg {
+	width: 32px;
+	height: auto;
+}
+
+div.hero {
+    width: 100%;
+    position: relative;
+  }
+  
+  div.hero img {
+    width: 100%;
+}
+
+  div.hero a {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .5rem 1rem;
+    background-color: #224b0c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+  }
+  div.hero a:hover {
+    font-size: 125%;
+    background-color: #b59d45;
+    color: black;
+}
+
+main div.cards{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+
+  }
+
+  main section {
+    background-color: #eee;
+    border: 1px solid #313131;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(181, 157, 69, 0.7);
+  }
+  main section h2 {
+    margin-top: 0;
+}
+  
+footer {
+    background-color: rgba(49, 49, 49, 0.9);
+    color: white;
+  }
+
+  footer section {
+    padding: 1rem ;
+}
+
+  footer p {
+    margin: 0;
+    line-height: 1.3rem;
+}
+
+  footer a {
+    color: white;
+}
+
+  
