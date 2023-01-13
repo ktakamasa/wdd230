@@ -38,7 +38,16 @@ header p {
   font-size: 2rem;
   width: 48px;
   height: 48px;
-  text-align: center;
+  /* text-align: center; */
+}
+
+#menu-button::before{
+  content: "≡";
+}
+
+#menu-button.close::before {
+  content: "X";
+  font-size: 1rem;
 }
 
 nav ul {

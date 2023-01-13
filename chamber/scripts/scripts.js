@@ -9,4 +9,5 @@ const menuitems = document.querySelector("nav ul");
 menubutton.addEventListener("click", () => {
     menubutton.classList.toggle("open");
     menuitems.classList.toggle("open");
+    menubutton.classList.toggle("close");
 });
