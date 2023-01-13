@@ -1,2 +1,87 @@
+@media only screen and (min-width: 40rem) {
+  header {
+    grid-template-columns: 64px repeat(3, 1fr);
+  }
 
-  
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+  nav {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .logo {
+    max-width: 64px;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  .social {
+    justify-self: end;
+  }
+  .social svg {
+    width: 40px;
+    height: auto;
+  }
+
+  div.hero a {
+    top: 10%;
+    left: 10%;
+  }
+
+  main div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  section.news {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  section.events {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  section.weather {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    place-items: center;
+  }
+
+  footer section:nth-child(1) {
+    display: grid;
+    grid-template-columns: 75px auto;
+  }
+
+  footer section:nth-child(3) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
