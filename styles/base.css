@@ -64,7 +64,7 @@ header h1 {
     text-align: center;
     margin: auto 0;
 }
-header image #profile {
+#profile {
     max-width: 125px;
     grid-column: 1 / 2;
     padding: 10px;
