@@ -20,29 +20,29 @@
     text-align: left;
   }
 
-  section {
+  main section {
     margin: 0;
   }
 
-  #activities {
+  main section #activities {
     grid-column: 1 / 2;
     grid-row: 2/4;
   }
 
-  #project {
+  main section #project {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
-  #project ul {
+  main section #project ul {
     padding: 1rem;
   }
 
-  #information {
+  main section #information {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }
 
-  #information div {
+  main section #information div {
     padding: 10px 0 0 20px;
   }
 }
