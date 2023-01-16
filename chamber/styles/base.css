@@ -74,11 +74,13 @@ nav ul li a {
   color: white;
   text-decoration: none;
   padding: 0.75rem;
+  transition: 0.5s;
 }
 
 nav ul li:hover a {
   background-color: #b59d45;
   color: black;
+  
 }
 
 nav ul li.active{
