@@ -40,17 +40,27 @@
     </nav>
 
     <header>
-        <img id="profile" src="images/me.jpg" alt="photo of me">
+        <img id="profile" src="images/me.webp" alt="photo of me" loading="lazy" width="250" height="350" >
         <h1>Koh Takamasa</h1>
     </header>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px" srcset="images/temple-small.webp">
+                <img src="images/temple-hero.webp" alt="Image of Columbus Ohio Temple" loading="lazy" width="900" height="420">
+            </picture>
+            <div class="herolabel">
+                <p>Columbus Ohio Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Course Activity Portal</h2>
 
-        <section id="activities" class="card">
-            <h3>Learning Activities</h3>
-            <ul class="weeks">
-                <li>Week 01: <a href="week01/holy-grail/holygrail.html">Grail</a> | <a
+        <div class="cards">
+            <section id="activities" class="card">
+                <h3>Learning Activities</h3>
+                <ul class="weeks">
+                    <li>Week 01: <a href="week01/holy-grail/holygrail.html">Grail</a> | <a
                         href="week01/media-query/media-query.html">Media Query</a> | <a
                         href="week01/chamber-site-plan/chamber-site-plan.html">Chamber Siteplan</a></li>
                 <li>Week 02: <a href="week02/design/design.html">Design</a> | <a
@@ -72,10 +82,18 @@
 
         <section id="information" class="card">
             <h3>Information</h3>
-            <div>Weather</div>
-            <div>Visit Count</div>
+            <p>Weather</p>
 
+            	<p>
+                    <span class="label">Number of Visits: </span>
+                    <span class="visits"></span>
+                </p>
+            
         </section>
+    </div>
+        
+        <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48820.68820866515!2d-83.18094294139226!3d40.11347312665887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838ecc4d450a11f%3A0xc2176815689028!2sDublin%2C%20OH%2C%20USA!5e0!3m2!1sen!2spt!4v1673883228110!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> - Koh Takamasa - Portugal</p>

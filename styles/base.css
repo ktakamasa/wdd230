@@ -66,6 +66,7 @@ header h1 {
 }
 #profile {
     max-width: 125px;
+    height: auto;
     grid-column: 1 / 2;
     padding: 10px;
     margin-left: 3rem;
@@ -74,19 +75,51 @@ header h1 {
 main {
     color: black;
     padding: 2rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.herolabel {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: rgba(228, 228, 228, 0.681);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    opacity: 0.8;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
 }
 
 main h2 {
     border-bottom: 1px solid black;
     padding: 1rem;
     text-align: center;
+    margin: 1rem;
 }
 
 main.dark,
 main.dark a {
     background-color: rgb(35, 35, 35);
     color: white
+}
+
+main.dark .herolabel {
+    color: black;
 }
 
 main.dark section {
@@ -109,18 +142,23 @@ section {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 2px 2px 3px 3px rgba(89, 100, 108, 0.5);
-    margin: 2rem;
+    margin: 1rem;
     line-height: 2rem;
 }
 
 
-h3 {
+section h3 {
     background-color: rgba(38, 78, 109, 1);
     color: white;
     text-align: center;
     margin: 0;
     border-radius: 8px 8px 0 0;
 }
+
+section p {
+    padding-left: 20px;
+}
+
 
 footer {
     background-color: rgba(38, 78, 109, 1);
@@ -136,4 +174,8 @@ footer p {
 .highlight {
     font-size: 0.75rem;
     color: yellow;
+}
+
+#maps {
+    margin: 1rem;
 }
