@@ -11,18 +11,17 @@ const menubutton = document.querySelector("#menu-button");
 const menuitems = document.querySelectorAll(".menu-item");
 
 menubutton.addEventListener("click", () => {
-	menuitems.forEach((item) => item.classList.toggle("open"));
-	menubutton.classList.toggle("close");
+  menuitems.forEach((item) => item.classList.toggle("open"));
+  menubutton.classList.toggle("close");
 });
 
-
-// dark mode 
+// dark mode
 const modeButton = document.querySelector("#mode");
 const mainArea = document.querySelector("main");
 modeButton.addEventListener("click", () => {
-	modeButton.classList.toggle("dark");
-	mainArea.classList.toggle("dark");
-})
+  modeButton.classList.toggle("dark");
+  mainArea.classList.toggle("dark");
+});
 
 // visit counter
 const displayVisits = document.querySelector(".visits");
@@ -32,11 +31,9 @@ let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
-	displayVisits
-.textContent = numVisits;
+  displayVisits.textContent = numVisits;
 } else {
-	displayVisits
-.textContent = "This is your first visit!";
+  displayVisits.textContent = "This is your first visit!";
 }
 
 // increment the number of visits.

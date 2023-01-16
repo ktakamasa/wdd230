@@ -1,181 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Open Sans", Arial, Helvetica;
+  font-family: "Open Sans", Arial, Helvetica;
 }
 
 nav .menu {
-	position: absolute;
-	top: 0;
-	right: 0;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background: #f7f7f7;
-	overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  overflow: hidden;
 }
 nav .menu li a {
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	width: 6rem;
-	padding: 1rem;
-	color: black;
-	position: relative;
-	transition: background 0.5s ease-in-out;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 6rem;
+  padding: 1rem;
+  color: black;
+  position: relative;
+  transition: background 0.5s ease-in-out;
 }
 
 nav #menu-button::before {
-	content: "≡";
-	font-size: 2rem;
+  content: "≡";
+  font-size: 2rem;
 }
 
 nav .menu li a:hover,
 nav .menu li:first-child a {
-	background: rgba(38, 78, 109, 1);
-	color: #fff;
+  background: rgba(38, 78, 109, 1);
+  color: #fff;
 }
 
 nav li a.menu-item {
-	display: none;
+  display: none;
 }
 
 nav li a.open {
-	display: flex;
+  display: flex;
 }
 
 nav #menu-button.close::before {
-	content: "X";
+  content: "X";
 }
 
 header {
-    background-color: rgba(38, 78, 109, 1);
-    color: white;
-    display: grid;
-    grid-template-columns: auto 1fr;
+  background-color: rgba(38, 78, 109, 1);
+  color: white;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 header h1 {
-    text-align: center;
-    margin: auto 0;
+  text-align: center;
+  margin: auto 0;
 }
 #profile {
-    max-width: 125px;
-    height: auto;
-    grid-column: 1 / 2;
-    padding: 10px;
-    margin-left: 3rem;
+  max-width: 125px;
+  height: auto;
+  grid-column: 1 / 2;
+  padding: 10px;
+  margin-left: 3rem;
 }
 
 main {
-    color: black;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+  color: black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .hero img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .herolabel {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    background-color: rgba(228, 228, 228, 0.681);
-    border: 1px solid rgba(0, 0, 0, 0.75);
-    padding: 1rem;
-    opacity: 0.8;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: rgba(228, 228, 228, 0.681);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  opacity: 0.8;
 }
 
 .herolabel p {
-    margin: 0;
-    padding: 0.25rem;
-    font-weight: 800;
-    font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 main h2 {
-    border-bottom: 1px solid black;
-    padding: 1rem;
-    text-align: center;
-    margin: 1rem;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
 }
 
 main.dark,
 main.dark a {
-    background-color: rgb(35, 35, 35);
-    color: white
+  background-color: rgb(35, 35, 35);
+  color: white;
 }
 
 main.dark .herolabel {
-    color: black;
+  color: black;
 }
 
 main.dark section {
-    border: 2px solid rgb(150, 150, 150);
-    color: white
+  border: 2px solid rgb(150, 150, 150);
+  color: white;
 }
 
-
 ul {
-    list-style: none;
-    padding-left: 20px;
+  list-style: none;
+  padding-left: 20px;
 }
 
 main a {
-color: black;
+  color: black;
 }
-
 
 section {
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px 3px rgba(89, 100, 108, 0.5);
-    margin: 1rem;
-    line-height: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 3px rgba(89, 100, 108, 0.5);
+  margin: 1rem;
+  line-height: 2rem;
 }
 
-
 section h3 {
-    background-color: rgba(38, 78, 109, 1);
-    color: white;
-    text-align: center;
-    margin: 0;
-    border-radius: 8px 8px 0 0;
+  background-color: rgba(38, 78, 109, 1);
+  color: white;
+  text-align: center;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 section p {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-
 footer {
-    background-color: rgba(38, 78, 109, 1);
-    color: white;
-    text-align: center;
-
+  background-color: rgba(38, 78, 109, 1);
+  color: white;
+  text-align: center;
 }
 
 footer p {
-    padding: 5px;
+  padding: 5px;
 }
 
 .highlight {
-    font-size: 0.75rem;
-    color: yellow;
+  font-size: 0.75rem;
+  color: yellow;
 }
 
 #maps {
-    margin: 1rem;
+  margin: 1rem;
 }
