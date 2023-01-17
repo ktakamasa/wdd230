@@ -1,3 +1,4 @@
+/* HOME */
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -137,12 +138,11 @@ main div.cards {
   padding: 1rem 2rem;
 }
 
-main section {
-  background-color: #eee;
-  border: 1px solid #313131;
+main .cards section {
+  background-color: rgba(181, 157, 69, 0.7);
+  border: 1px solid black;
   max-width: 100%;
   padding: 1rem;
-  background-color: rgba(181, 157, 69, 0.7);
 }
 main section h2 {
   margin-top: 0;
