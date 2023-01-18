@@ -39,10 +39,9 @@ header p {
   font-size: 2rem;
   width: 50px;
   height: 50px;
-  /* text-align: center; */
 }
 
-#menu-button::before{
+#menu-button::before {
   content: "≡";
 }
 
@@ -81,12 +80,11 @@ nav ul li a {
 nav ul li:hover a {
   background-color: #b59d45;
   color: black;
-  
 }
 
-nav ul li.active{
-    text-decoration: underline 2px #b59d45;
-} 
+nav ul li.active {
+  text-decoration: underline 2px #b59d45;
+}
 
 .social {
   display: flex;
@@ -128,7 +126,7 @@ div.hero a:hover {
   color: black;
 }
 
-main div.cards {
+div.cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,13 +136,13 @@ main div.cards {
   padding: 1rem 2rem;
 }
 
-main div.cards section {
+div.cards section {
   background-color: rgba(181, 157, 69, 0.7);
   border: 1px solid black;
   max-width: 100%;
   padding: 1rem;
 }
-main section h2 {
+main .cards h2 {
   margin-top: 0;
 }
 
@@ -164,4 +162,37 @@ footer p {
 
 footer a {
   color: white;
+}
+
+div.discover {
+  background-color: rgba(181, 157, 69, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+div.discover h1 {
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: solid 2px #224b0c;
+}
+
+div.discover hr {
+  height: 2px;
+  background-color: #224b0c;
+  margin: 0;
+}
+section.demographics {
+  text-align: center;
+  margin: 1rem;
+}
+
+section.discover-imgs figure {
+  text-align: center;
+}
+
+section.discover-imgs img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: solid 1px #224b0c;
 }

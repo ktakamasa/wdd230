@@ -33,7 +33,7 @@
   nav ul li a {
     color: black;
   }
-  
+
   .social svg {
     width: 40px;
     height: auto;
@@ -82,5 +82,44 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+  }
+
+  div.discover {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: transparent;
+  }
+
+  div.discover h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    font-size: 2.5rem;
+  }
+
+  div.discover hr {
+    display: none;
+  }
+
+  section.demographics {
+    background-color: rgba(181, 157, 69, 0.7);
+    align-self:flex-start;
+    position: sticky;
+    top: 20%;
+  }
+
+  section.discover-imgs {
+    grid-column: 2 / 3;
+  }
+
+  section.discover-imgs img {
+    transition: transform 0.5s;
+  }
+
+  section.discover-imgs img:hover {
+    border: none;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 10px #224b0c;
   }
 }
