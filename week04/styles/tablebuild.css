@@ -11,6 +11,10 @@ caption {
 
 }
 
+table th {
+    padding: 1rem;
+}
+
 table thead tr:first-child{
     background-color: black;
     color: white
@@ -28,8 +32,8 @@ table tbody tr:nth-child(even) {
     background-color: #eee
 }
 
-table th {
-    padding: 1rem;
+table tbody th {
+    border: 1px solid gray;
 }
 
 table td {
