@@ -196,3 +196,8 @@ section.discover-imgs img {
   border-radius: 5px;
   border: solid 1px #224b0c;
 }
+
+/* Thank you  */
+main div.thanks {
+  text-align: center;
+}

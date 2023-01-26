@@ -70,7 +70,9 @@
                     <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy
                             Load</a> | <a href="https://codepen.io/ktaka18/pen/rNrzZxJ">Responsive Images</a> | <a
                             href="week03/bom/bom.html">BOM localStorage</a></li>
-                    <li>Week 04: <a href="https://codepen.io/ktaka18/pen/jOpzLGo">Pseudo-classes</a> | <a href="images/combinators.webp">Combinators</a> | <a href="week04/tablebuild.html">Tables</a> | <a href="week04/form-start/index.html">Forms</a></li>
+                    <li>Week 04: <a href="https://codepen.io/ktaka18/pen/jOpzLGo">Pseudo-classes</a> | <a
+                            href="images/combinators.webp">Combinators</a> | <a href="week04/tablebuild.html">Tables</a>
+                        | <a href="week04/form-start/index.html">Forms</a></li>
                     <li>Week 05: <a></a></li>
                     <li>Week 06: <a></a></li>
                 </ul>
@@ -101,7 +103,70 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+
+        <div id="form">
+            <section>
+                <form id="reviewForm">
+                    <label>Full Name*<input type="text" name="fname" id="fname" required></label>
+                    <label>Email*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label for="r">Page Rating [ <span id="rating"></span> ]</label>
+                    <div class="rangecontainer">
+                        <input type="range" min="1" max="10" id="r" name="r" list="ten">
+                        <div class="ratinglabels">
+                            <span class="ratevalue">1</span>
+                            <span class="ratevalue">2</span>
+                            <span class="ratevalue">3</span>
+                            <span class="ratevalue">4</span>
+                            <span class="ratevalue">5</span>
+                            <span class="ratevalue">6</span>
+                            <span class="ratevalue">7</span>
+                            <span class="ratevalue">8</span>
+                            <span class="ratevalue">9</span>
+                            <span class="ratevalue">10</span>
+                        </div>
+                    </div>
+                    <datalist id="ten">
+                        <option label="1">1</option>
+                        <option label="2">2</option>
+                        <option label="3">3</option>
+                        <option label="4">4</option>
+                        <option label="5">5</option>
+                        <option label="6">6</option>
+                        <option label="7">7</option>
+                        <option label="8">8</option>
+                        <option label="9">9</option>
+                        <option label="10">10</option>
+                    </datalist>
+
+
+                    <div id="usernameMessage"></div>
+                    <label>Username*<input type="password" id="username1" name="username1" required
+                            pattern="(?=.*?[A-Za-z0-9])(?=.*?[#?!@$%^&*-]).{5,12}$"></label>
+                    <label>Re-enter Username*<input type="password" id="username2" name="username2" required
+                            pattern="(?=.*?[A-Za-z0-9])(?=.*?[#?!@$%^&*-]).{5,12}$"></label>
+
+                    <input id="submitBtn" type="submit" value="Send Review">
+                </form>
+            </section>
+
+            <section>
+                <table class="submitReview">
+                    <caption>Submitted Review</caption>
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
+
+
     <footer>
         <p>&copy; <span id="year"></span> - Koh Takamasa - Portugal</p>
         <p class="highlight">Last modified: <span id="lastModified"></span></p>
