@@ -26,3 +26,7 @@ if (numVisits !== 0) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
+
+// form submission date
+let dateTimeToday = new Date();
+document.querySelector("input[name='date'").value = dateTimeToday;
