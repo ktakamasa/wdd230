@@ -180,17 +180,17 @@ form {
   font-size: 16px;
 }
 
-form label{
+form label {
   display: block;
   margin: 0.5rem;
 }
 
-form input{
+form input {
   display: block;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 0.75rem;
-  width: 100%;
+  width: 90%;
   max-width: 20rem;
 }
 
@@ -206,58 +206,63 @@ form input#submitBtn {
 }
 
 #r {
-	margin: 0;
-	padding: 0;
+  margin-left: 0.5rem;
+  padding: 0;
 }
 
 .ratinglabels {
-	font-size: 0.75rem;
+  font-size: 0.75rem;
   display: flex;
-	justify-content: space-around;
-  width: 100%
+  justify-content: space-around;
+  max-width: 20rem;
+  margin-left: 0.5rem;
 }
 
 #rating {
-	color: rgba(38, 78, 109, 1);
+  color: rgba(38, 78, 109, 1);
 }
 
 .ratevalue {
-	margin: 0;
+  margin: 0;
 }
 
-  div#usernameMessage {
-    display: none;
-    background-color: red;
-    color: white;
-    padding: 0.25rem;
-    text-align: center;
-    margin-bottom: 0;
-    width: auto;
-  }
+div#usernameMessage {
+  display: none;
+  background-color: red;
+  color: white;
+  padding: 0.25rem;
+  text-align: center;
+  margin-bottom: 0;
+  width: auto;
+}
+
+#submitBtn {
+  max-width: 10rem;
+}
 
 #form table {
   width: 100%;
   padding: 1rem;
   border-collapse: collapse;
-  margin: 0.5rem auto;
+  margin: 0 auto;
 }
 #form table caption {
   padding: 0.5rem;
   background-color: rgba(38, 78, 109, 1);
   color: white;
+  border-radius: 8px 8px 0 0;
 }
 
 #form th {
   background-color: rgba(38, 78, 109, 0.6);
   color: white;
-  padding: .5rem
+  padding: 0.5rem;
 }
 
-#form td { 
+#form td {
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 1px solid gray;
-
 }
 
 #form tbody tr td:nth-child(2) {
