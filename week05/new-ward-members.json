@@ -1,0 +1,19 @@
+{
+    "familyName" : "Takamasa",
+    "dateMoved" : "12-01-2022",
+    "numMembers" : 2,
+    "visitBishopric" : false,
+    "members" : [
+        {
+            "name" : "Koh",
+            "gender" : "M",
+            "birthDate" : "03-25-2000"
+        },
+        {
+            "name" : "Jaqueline",
+            "gender" : "F",
+            "birthDate" : "12-30-1994"
+        }
+    ]
+
+}
