@@ -1,5 +1,5 @@
-const url =
-  "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+const url ="https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+// const url = "prophets.json"
 const cards = document.querySelector("#cards");
 
 async function getProphetData(url) {
