@@ -156,6 +156,10 @@ section p {
   padding-left: 20px;
 }
 
+section#information img{
+  padding-left: 20px;
+}
+
 footer {
   background-color: rgba(38, 78, 109, 1);
   color: white;

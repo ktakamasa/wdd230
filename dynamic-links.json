@@ -1,0 +1,7 @@
+{
+    "week01" : ["week01/holy-grail/holygrail.html", "week01/media-query/media-query.html", "week01/chamber-site-plan/chamber-site-plan.html"],
+    "week02" : ["week02/design/design.html","https://codepen.io/ktaka18/pen/VwBpavX", "week02/bom/bom.html"],
+    "week03" : ["week03/images/landscape.webp", "week03/lazyload.html", "https://codepen.io/ktaka18/pen/rNrzZxJ", "week03/bom/bom.html"],
+    "week04" : ["https://codepen.io/ktaka18/pen/jOpzLGo", "images/combinators.webp", "week04/tablebuild.html", "week04/form-start/index.html"],
+    "week05" : ["https://codepen.io/ktaka18/pen/QWBVaem", "week05/new-ward-members.json", "week05/prophets.html", "week05/weather.html"]
+}
