@@ -164,7 +164,6 @@ async function getWeeksActivities() {
 
 getWeeksActivities();
 
-
 function displayActivities(weeks) {
   weeks.forEach((week) => {
     const list = document.querySelector(".weeks");
