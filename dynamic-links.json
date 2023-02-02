@@ -1,7 +1,111 @@
 {
-    "week01" : ["week01/holy-grail/holygrail.html", "week01/media-query/media-query.html", "week01/chamber-site-plan/chamber-site-plan.html"],
-    "week02" : ["week02/design/design.html","https://codepen.io/ktaka18/pen/VwBpavX", "week02/bom/bom.html"],
-    "week03" : ["week03/images/landscape.webp", "week03/lazyload.html", "https://codepen.io/ktaka18/pen/rNrzZxJ", "week03/bom/bom.html"],
-    "week04" : ["https://codepen.io/ktaka18/pen/jOpzLGo", "images/combinators.webp", "week04/tablebuild.html", "week04/form-start/index.html"],
-    "week05" : ["https://codepen.io/ktaka18/pen/QWBVaem", "week05/new-ward-members.json", "week05/prophets.html", "week05/weather.html"]
+  "weeks": [
+    {
+      "week": "Week01",
+      "links": [
+        {
+          "url": "week01/holy-grail/holygrail.html",
+          "title": "Grail"
+        },
+        {
+          "url": "week01/media-query/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "week01/chamber-site-plan/chamber-site-plan.html",
+          "title": "Chamber Siteplan"
+        },
+        {
+          "url": "",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "week": "Week02",
+      "links": [
+        {
+          "url": "week02/design/design.html",
+          "title": "Design"
+        },
+        {
+          "url": "https://codepen.io/ktaka18/pen/VwBpavX",
+          "title": "Responsive Menu"
+        },
+        {
+          "url": "week02/bom/bom.html",
+          "title": "BOM"
+        },
+        {
+          "url": "",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "week": "Week03",
+      "links": [
+        {
+          "url": "week03/images/landscape.webp",
+          "title": "Webp"
+        },
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazy Load"
+        },
+        {
+          "url": "https://codepen.io/ktaka18/pen/rNrzZxJ",
+          "title": "Responsive Images"
+        },
+        {
+          "url": "week03/bom/bom.html",
+          "title": "BOM localStorage"
+        }
+      ]
+    },
+
+    {
+      "week": "Week04",
+      "links": [
+        {
+          "url": "https://codepen.io/ktaka18/pen/jOpzLGo",
+          "title": "Pseudo-classes"
+        },
+        {
+          "url": "images/combinators.webp",
+          "title": "Combinators"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Tables"
+        },
+        {
+          "url": "week04/form-start/index.html",
+          "title": "Forms"
+        }
+      ]
+    },
+
+    {
+      "week": "Week05",
+      "links": [
+        {
+          "url": "https://codepen.io/ktaka18/pen/QWBVaem",
+          "title": "Pseudo-element"
+        },
+        {
+          "url": "week05/new-ward-members.json",
+          "title": "JSON"
+        },
+        {
+          "url": "week05/prophets.html",
+          "title": "Prophets"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "Weather API"
+        }
+      ]
+    }
+  ]
 }

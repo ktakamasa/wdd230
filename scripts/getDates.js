@@ -143,3 +143,56 @@ function displayResults(data) {
 
 
 // JSON Dynamic Links 
+const urlLinks = "dynamic-links.json";
+const links = document.querySelector(".weeks");
+
+async function getWeeksActivities() {
+  try {
+    const response = await fetch(urlLinks);
+    if (response.ok) {
+
+      const data = await response.json();
+      console.log(data.weeks);
+      displayActivities(data.weeks);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getWeeksActivities();
+
+
+function displayActivities(weeks) {
+  weeks.forEach((week) => {
+    const list = document.querySelector(".weeks");
+    const activities = document.createElement("li");
+    const weekNum = (week.week);
+    const title1 = (week.links[0].title);
+    const url1 = (week.links[0].url);
+    const title2 = (week.links[1].title);
+    const url2 = (week.links[1].url);
+    const title3 = (week.links[2].title);
+    const url3 = (week.links[2].url);
+    const title4 = (week.links[3].title);
+    const url4 = (week.links[3].url);
+    // console.log(week.week);
+    // console.log(week.links[0].title);
+    // console.log(week.links[0].url);
+    // console.log(week.links[1].title);
+    // console.log(week.links[1].url);
+    // console.log(week.links[2].title);
+    // console.log(week.links[2].url);
+    // console.log(week.links[3].title);
+    // console.log(week.links[3].url);
+    if (title4 == "" && url4 == "") {
+      activities.innerHTML = `${weekNum}: <a href="${url1}">${title1}</a> | <a href="${url2}">${title2}</a> | <a href="${url3}">${title3}</a>`;
+    } else {
+      activities.innerHTML = `${weekNum}: <a href="${url1}">${title1}</a> | <a href="${url2}">${title2}</a> | <a href="${url3}">${title3}</a> | <a href="${url4}">${title4}</a>`;
+    }
+    list.appendChild(activities);
+
+  });
+}
