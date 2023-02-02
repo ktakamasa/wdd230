@@ -120,7 +120,7 @@ async function apiFetch() {
     const response = await fetch(urlWeather);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); //testing
+      // console.log(data); //testing
       displayResults(data); 
     } else {
       throw Error(await response.text());
@@ -152,7 +152,7 @@ async function getWeeksActivities() {
     if (response.ok) {
 
       const data = await response.json();
-      console.log(data.weeks);
+      // console.log(data.weeks);
       displayActivities(data.weeks);
     } else {
       throw Error(await response.text());
