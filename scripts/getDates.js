@@ -177,21 +177,12 @@ function displayActivities(weeks) {
     const url3 = (week.links[2].url);
     const title4 = (week.links[3].title);
     const url4 = (week.links[3].url);
-    // console.log(week.week);
-    // console.log(week.links[0].title);
-    // console.log(week.links[0].url);
-    // console.log(week.links[1].title);
-    // console.log(week.links[1].url);
-    // console.log(week.links[2].title);
-    // console.log(week.links[2].url);
-    // console.log(week.links[3].title);
-    // console.log(week.links[3].url);
+  
     if (title4 == "" && url4 == "") {
       activities.innerHTML = `${weekNum}: <a href="${url1}">${title1}</a> | <a href="${url2}">${title2}</a> | <a href="${url3}">${title3}</a>`;
     } else {
       activities.innerHTML = `${weekNum}: <a href="${url1}">${title1}</a> | <a href="${url2}">${title2}</a> | <a href="${url3}">${title3}</a> | <a href="${url4}">${title4}</a>`;
     }
     list.appendChild(activities);
-
   });
 }
