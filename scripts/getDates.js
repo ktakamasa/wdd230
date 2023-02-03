@@ -149,7 +149,6 @@ async function getWeeksActivities() {
   try {
     const response = await fetch(urlLinks);
     if (response.ok) {
-
       const data = await response.json();
       // console.log(data.weeks);
       displayActivities(data.weeks);

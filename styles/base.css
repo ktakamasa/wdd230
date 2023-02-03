@@ -156,8 +156,13 @@ section p {
   padding-left: 20px;
 }
 
-section#information img{
-  padding-left: 20px;
+section#information,
+section#project {
+  text-align: center;
+}
+section#information p,
+section#project ul{
+  padding: 0 ;
 }
 
 footer {

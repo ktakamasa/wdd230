@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "SportsOhio Inc.",
+      "logo": "./images/members-logos/webp/sportsOhio.webp",
+      "url": "https://sportsohio.org/",
+      "address": "6314 Cosgray Rd. Dublin OH 43016",
+      "phone": "614-791-3003",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Dublin Food Pantry",
+      "logo": "./images/members-logos/webp/pantry.webp",
+      "url": "https://www.dublinfoodpantry.org/",
+      "address": "81 W. Bridge St. Dublin OH 43017",
+      "phone": "614-889-6590",
+      "membershipLevel": "Non-profit"
+    },
+    {
+      "name": "Hampton Inn Columbus Dublin",
+      "logo": "./images/members-logos/webp/hampton.webp",
+      "url": "https://www.hilton.com/en/hotels/cmhnwhx-hampton-columbus-dublin/",
+      "address": "3920 Tuller Rd. Dublin OH 43017",
+      "phone": "614-889-0573",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "The Mall at Tuttle Crossing",
+      "logo": "./images/members-logos/webp/mall.webp",
+      "url": "https://www.shoptuttlecrossing.com/",
+      "address": "5043 Tuttle Crossing Blvd. Dublin OH 43016",
+      "phone": "614-717-9604",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Der Dutchman Restaurant",
+      "logo": "./images/members-logos/webp/der.webp",
+      "url": "https://dhgroup.com/restaurants/",
+      "address": "445 S. Jefferson, Rt. 42 Plain City OH 43064",
+      "phone": "614-873-3414",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "The Dublin Village Tavern",
+      "logo": "./images/members-logos/webp/tavern.webp",
+      "url": "http://www.thedublinvillagetavern.com/",
+      "address": "27 S. High St. Dublin OH 43017",
+      "phone": "614-766-6250",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Asherton of Dublin",
+      "logo": "./images/members-logos/webp/asherton.webp",
+      "url": "https://www.liveasherton.com/",
+      "address": "5400 Asherton Blvd. Dublin OH 43017",
+      "phone": "614-761-0222",
+      "membershipLevel": "Silver"
+    }
+  ]
+}
