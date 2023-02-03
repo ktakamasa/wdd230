@@ -208,7 +208,7 @@ div.join h1 {
   border-bottom: solid 2px #224b0c;
 }
 
-section.form{
+section.form {
   display: flex;
 }
 
@@ -216,7 +216,7 @@ form {
   margin: 1rem auto;
 }
 
-form label{
+form label {
   display: block;
   margin-bottom: 1rem;
 }
@@ -240,7 +240,7 @@ form fieldset legend {
 
 form input[type="text"],
 form input[type="email"],
-form input[type="tel"]{
+form input[type="tel"] {
   display: block;
   width: 20rem;
   padding: 0.5rem;
@@ -279,4 +279,68 @@ section.membershipInfo p {
 /* Thank you  */
 main div.thanks {
   text-align: center;
+}
+
+/* directory */
+h1.directoryH {
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: solid 2px #224b0c;
+}
+
+div.menu {
+  text-align: center;
+}
+
+div.menu button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: solid 1px #224b0c;
+}
+
+/*Grid*/
+div.grid {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem auto;
+}
+
+div.grid section {
+  text-align: center;
+  margin: 0.5rem;
+  border: solid 1px #224b0c;
+  border-radius: 5px;
+}
+
+div.grid img {
+  max-width: 100%;
+  margin: 0.5rem;
+}
+div.grid h3,
+div.grid p {
+  margin: 0.2rem 0;
+}
+
+/*List*/
+div.list {
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+div.list section {
+  display: grid;
+  grid-template-columns: 60px repeat(5, auto);
+  text-align: center;
+  margin: 0.5rem 2rem;
+  border: solid 1px #224b0c;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+}
+div.list img {
+  width: 50px;
+  height: auto;
+  justify-self: center;
 }

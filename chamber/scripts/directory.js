@@ -5,7 +5,7 @@ async function getMembers() {
         const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data.members);
+        // console.log(data.members);
         displayMembers(data.members);
       } else {
         throw Error(await response.text());
@@ -20,7 +20,7 @@ async function getMembers() {
   function displayMembers(members) {
     members.forEach((member) => {
     
-        const memberCards = document.querySelector(".members");
+        const memberCards = document.querySelector("#members");
         
         const name = document.createElement("h2");
         name.innerHTML = member.name;
@@ -30,7 +30,7 @@ async function getMembers() {
         logo.setAttribute("alt", `${member.name} logo`);
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", "250");
-        logo.setAttribute("height", "300");
+        logo.setAttribute("height", "250");
         
         const url = document.createElement("p");
         url.innerHTML = `<a href="${member.url}" target="_blank">Website</a>`;
@@ -53,4 +53,21 @@ async function getMembers() {
         card.appendChild(level);
         memberCards.appendChild(card);
     });
+}
+
+//grid - list 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("div#members");
+
+gridbutton.addEventListener("click", showGrid);
+listbutton.addEventListener("click", showList);
+
+function showGrid() {
+  display.classList.add("grid");
+	display.classList.remove("list");
+}
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
 }

@@ -139,4 +139,8 @@
   section.form{
     margin: 0 auto;
   }
+
+  h1.directoryH {
+    font-size: 2.5rem;
+  }
 }
