@@ -1,7 +1,11 @@
 const lat = "40.12553412958195";
 const lon = "-83.16034569661029";
 const part = "minutely,hourly,alerts";
+<<<<<<< HEAD
 const key = "437209d363a4387bb2f5dffcea58bbee";
+=======
+const key = "58f0d0f204c9a8f0d01dbf9e766b5458";
+>>>>>>> a33db27 (fix error and add chamber)
 const urlWeather = `//api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=${part}&appid=${key}&units=imperial`;
 
 const currentTemp = document.querySelector("#current-temp");

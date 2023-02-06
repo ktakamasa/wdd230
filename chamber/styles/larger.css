@@ -68,7 +68,10 @@
   section.weather table {
     width: 100%;
     overflow:scroll;
+<<<<<<< HEAD
 
+=======
+>>>>>>> a33db27 (fix error and add chamber)
   }
 
   footer {
