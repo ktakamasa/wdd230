@@ -97,6 +97,18 @@ nav ul li.active {
   height: auto;
 }
 
+/* banner */
+p#banner {
+  text-align: center;
+  background-color: rgba(181, 157, 69, 0.7);
+  margin: 0;
+  padding: 1rem;
+}
+
+#banner.hide {
+  display: none;
+}
+
 div.hero {
   width: 100%;
   position: relative;
@@ -144,6 +156,38 @@ div.cards section {
 }
 main .cards h2 {
   margin-top: 0;
+}
+
+section.weather p {
+  margin-bottom: 0;
+}
+
+section.weather table.forecast {
+  border-collapse: collapse;
+  margin: 0 auto;
+  
+}
+
+caption {
+  text-align: center;
+  caption-side: top;
+}
+
+section.weather table.forecast th, 
+section.weather table.forecast td{
+  border: 1px solid black;
+  padding: 0.3rem;
+}
+
+/* spotlight cards */
+.spotlight img {
+  max-width: 100%; 
+  display: block;
+  margin: 0 auto;
+}
+
+.spotlight a {
+  color: black;
 }
 
 footer {
@@ -297,6 +341,9 @@ div.menu button {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: solid 1px #224b0c;
+}
+div#members a {
+  color: black;
 }
 
 /*Grid*/

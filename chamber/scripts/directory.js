@@ -30,7 +30,7 @@ async function getMembers() {
         logo.setAttribute("alt", `${member.name} logo`);
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", "250");
-        logo.setAttribute("height", "250");
+        logo.setAttribute("height", "200");
         
         const url = document.createElement("p");
         url.innerHTML = `<a href="${member.url}" target="_blank">Website</a>`;
@@ -39,7 +39,7 @@ async function getMembers() {
         address.innerHTML = member.address;
 
         const phone = document.createElement("p");
-        phone.innerHTML = member.phone;
+        phone.innerHTML = `<a href="tel:${member.phone}">${member.phone}</a>`;
         
         const level = document.createElement("p");
         level.innerHTML = member.membershipLevel;

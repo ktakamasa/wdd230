@@ -3,7 +3,8 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trier&appid=58f0d0f204c9a8f0d01dbf9e766b5458&units=imperial';
+const url =
+  "https://api.openweathermap.org/data/2.5/weather?q=Trier&appid=58f0d0f204c9a8f0d01dbf9e766b5458&units=imperial";
 
 async function apiFetch() {
   try {
@@ -11,7 +12,7 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       console.log(data); //testing
-      displayResults(data); 
+      displayResults(data);
     } else {
       throw Error(await response.text());
     }

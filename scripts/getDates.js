@@ -41,7 +41,7 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
-//Form 
+//Form
 //slider
 const rating = document.querySelector("#rating");
 const rangeValue = document.querySelector("#r");
@@ -81,7 +81,7 @@ const submitReview = document.querySelector(".submitReview tbody");
 const reviewForm = document.querySelector("#reviewForm");
 
 document.querySelector("#reviewForm").addEventListener("submit", function (event) {
-  event.preventDefault();
+  event.preventDefault(); 
 });
 
 submitBtn.addEventListener("click", () => {
@@ -107,13 +107,13 @@ function addLines(field, value) {
   submitReview.appendChild(row);
 }
 
-// weather 
+// weather
 // select HTML elements in the document
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#weatherDesc");
 
-const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=58f0d0f204c9a8f0d01dbf9e766b5458&units=imperial';
+const urlWeather = "//api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=58f0d0f204c9a8f0d01dbf9e766b5458&units=imperial";
 
 async function apiFetch() {
   try {
@@ -121,7 +121,7 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       // console.log(data); //testing
-      displayResults(data); 
+      displayResults(data);
     } else {
       throw Error(await response.text());
     }
@@ -142,7 +142,7 @@ function displayResults(data) {
 }
 
 
-// JSON Dynamic Links 
+// JSON Dynamic Links
 const urlLinks = "dynamic-links.json";
 
 async function getWeeksActivities() {
@@ -175,7 +175,7 @@ function displayActivities(weeks) {
     const url3 = week.links[2].url;
     const title4 = week.links[3].title;
     const url4 = week.links[3].url;
-  
+
     if (title4 == "" && url4 == "") {
       activities.innerHTML = `${weekNum}: <a href="${url1}">${title1}</a> | <a href="${url2}">${title2}</a> | <a href="${url3}">${title3}</a>`;
     } else {
