@@ -162,10 +162,17 @@ section.weather p {
   margin-bottom: 0;
 }
 
+section.weather section.weatherTable {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
 section.weather table.forecast {
   border-collapse: collapse;
-  margin: 0 auto;
-  
+  width: 100%;
 }
 
 caption {
