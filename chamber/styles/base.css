@@ -162,29 +162,30 @@ section.weather p {
   margin-bottom: 0;
 }
 
-section.weather section.weatherTable {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
+section.weather section.forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
   border: none;
+  background-color: transparent;
   padding: 0;
 }
-
-section.weather table.forecast {
-  border-collapse: collapse;
+section.weather h3 {
+  grid-column: 1 / -1;
+}
+section.weather ol{
+  list-style: none;
+  display: table;
+  padding: 0;
+  margin: 0 auto;
   width: 100%;
 }
 
-caption {
-  text-align: center;
-  caption-side: top;
+section.weather li {
+  border: 1px solid black;
+  padding: 0.5rem;
 }
 
-section.weather table.forecast th, 
-section.weather table.forecast td{
-  border: 1px solid black;
-  padding: 0.3rem;
-}
 
 /* spotlight cards */
 .spotlight img {

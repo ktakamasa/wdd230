@@ -60,8 +60,8 @@ function displayForecastWeather(data) {
 
   for (let i = 0; i < 3; i++) {
     // console.table(data.daily[i]);
-    const dayHigh = document.createElement("td");
-    const dayLow = document.createElement("td");
+    const dayHigh = document.createElement("li");
+    const dayLow = document.createElement("li");
 
     dayHigh.innerHTML = `${data.list[i].main.temp_max}&deg;F`;
     // console.log(dayHigh);
