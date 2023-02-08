@@ -188,6 +188,18 @@ section.weather li {
 
 
 /* spotlight cards */
+div#spotlight-banner {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  background-color: #224b0c;
+  opacity: 0.8;
+}
+div#spotlight-banner h2 {
+  margin: 0;
+  color:white;
+  padding: 0.5rem;
+}
+
 .spotlight img {
   max-width: 100%; 
   display: block;
