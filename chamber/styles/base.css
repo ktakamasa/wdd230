@@ -202,6 +202,7 @@ div#spotlight-banner h2 {
 
 .spotlight img {
   max-width: 100%; 
+  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -364,6 +365,11 @@ div.menu button {
 }
 div#members a {
   color: black;
+}
+
+div#members img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*Grid*/
