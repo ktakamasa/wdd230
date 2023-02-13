@@ -12,7 +12,7 @@ async function getMembers() {
 
 getMembers();
 
-const displayMembers = (members) => {
+function displayMembers(members) {
   for (let i = 0; i < 3; i++) {
     // console.table(members) // make sure only gold and silver members
     index = Math.floor(Math.random() * members.length);
